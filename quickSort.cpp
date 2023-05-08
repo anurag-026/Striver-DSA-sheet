@@ -1,18 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int indexOf(int *arr, int n, int pivot)
-{
-
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i] == pivot)
-        {
-            return i;
-        }
-    }
-}
-
 int partition(int *arr, int low, int high)
 {
     int pivot = arr[low];
