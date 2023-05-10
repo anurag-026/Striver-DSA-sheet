@@ -64,7 +64,6 @@ int main()
     int arr[8] = {4, 2, 6, 1, 8, 3, 9, 5};
 
     quickSort(arr, 8);
-    // int p = partition(arr, 0,7);
     for (auto i : arr)
     {
         cout << i << " ";
