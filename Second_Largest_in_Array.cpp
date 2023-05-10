@@ -25,6 +25,52 @@ using namespace std;
 	    return max2nd;
 	}
 
+	int secondSmallest(int arr[],int n)
+	{
+    	if(n<2)
+    	    return -1;
+    	int small = INT_MAX;
+    	int second_small = INT_MAX;
+    	int i;
+    	for(i = 0; i < n; i++) 
+    	{
+       		if(arr[i] < small)
+       		{
+          	second_small = small;
+          	small = arr[i];
+       		}
+       		else if(arr[i] < second_small && arr[i] != small)
+       {
+          second_small = arr[i];
+       }
+    	}
+   		return second_small;     
+	}
+
+	int secondLargest(int arr[],int n)
+{
+	if(n<2)
+	return -1;
+    int large=INT_MIN,second_large=INT_MIN;
+    int i;
+    for (i = 0; i < n; i++) 
+    {
+        if (arr[i] > large) 
+        {
+            second_large = large;
+            large = arr[i];
+        }
+ 
+        else if (arr[i] > second_large && arr[i] != large) 
+        {
+            second_large = arr[i];
+        }
+    }
+    return second_large;                
+}
+
+
+
 int main()
 {
 
@@ -34,8 +80,12 @@ int main()
         for (int i = 0; i < n; i++) {
             cin >> arr[i];
         }
+
         auto ans = print2largest(arr, n);
-        cout << ans << "\n";
+        cout <<"Method 1:  "<< ans << "\n";
+		
+    	cout<<"Second Largest is: "<<secondLargest(arr[], n)<<endl;
+    	cout<<"Second Smallest is: "<<secondSmallest(arr[], n)<<endl;
     
     return 0;
 }

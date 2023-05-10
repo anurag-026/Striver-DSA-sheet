@@ -1,31 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int partition(int *arr, int low, int high)
 {
     int pivot = arr[low];
     int i = low, j = high;
 
-    /*
-        for(i , j; i<j ; i++, j-- ){
-            if(arr[i] > pivot && arr[j] <pivot ){
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-            }
-        }
-
-        if(i>j){
-            int temp= arr[0];
-            arr[0] =arr[j];
-            arr[j] = temp;
-        }
-
-        for(int i=0; i<= low+high  ; i++){
-            cout<<arr[i]<<" ";
-        }
-    */
 
     while (i < j)
     {
@@ -61,7 +41,7 @@ void quickSort(int *arr, int n)
 int main()
 {
 
-    int arr[8] = {4, 2, 6, 1, 8, 3, 9, 5};
+    int arr[8] = {4, 2, 6, 2, 8, 3, 9, 5};
 
     quickSort(arr, 8);
     for (auto i : arr)
