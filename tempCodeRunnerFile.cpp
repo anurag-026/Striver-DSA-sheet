@@ -1,3 +1,5 @@
-for(auto i:arr){
-        cout<<i<<" ";
+ for (int i = k; i < n; i++)
+    {
+        a[k] = temp[j];
+        j++;
     }
