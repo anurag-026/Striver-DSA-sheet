@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void leftRotate(int a[], int k, int n)
+void leftRotateM1(int a[], int k, int n)
 {
     // Your code goes here
     
@@ -24,6 +24,23 @@ void leftRotate(int a[], int k, int n)
     }
 }
 
+void revArray( int a[], int start, int end ){
+    
+}
+
+
+void leftRotateM1(int a[], int k, int n){
+
+    revArray(a, 0, k);
+    revArray(a, k+1, n);
+
+
+
+
+
+
+}
+
 int main()
 {
 
@@ -38,7 +55,7 @@ int main()
         cin >> a[i];
     }
 
-    leftRotate(a, k, n);
+    leftRotateM1(a, k, n);
 
     for (int i = 0; i < n; i++)
         cout << a[i] << " ";
