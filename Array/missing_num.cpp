@@ -15,6 +15,10 @@ int missingNumberM1(int A[], int N)  //Used Sorting
     }
 }
 
+int missingNumberM2(int A[], int N) {
+    
+}
+
 int main()
 {
 
