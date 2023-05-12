@@ -7,31 +7,8 @@ using namespace std;
         vector<int> v;
         int i = 0, j = 0; 
 
-        while(i < n && j < m)
-        {
-            if(arr1[i] == *(v.end()-1 )  || arr2[j] == *(v.end()-1 )   ) 
-                continue;
+        for(int i=0; i<n; i++){
             
-            
-            
-            else if (arr1[i] == arr2[j])
-            {
-                v.push_back(arr1[i]);
-                i++;
-                j++;
-            }
-            
-            else if (arr2[j]  < arr1[i] )
-                {
-                    v.push_back(arr2[j]);
-                    j++;
-                }
-        
-            else if (arr2[j]  > arr1[i] )
-            {
-                v.push_back(arr1[i]);
-                i++;
-            }
         }
 
         while(i<n ){
