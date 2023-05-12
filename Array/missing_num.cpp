@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int missingNumberM1(int A[], int N)  //Used Sorting
+int missingNumberM1(int A[], int N)  // Time Complexity = O(NlogN)
 {
     // Your code goes here
 
-    sort(A, A + N);
-    for (int i = 0; i < N; i++)
+    sort(A, A + (N-1));
+
+    for (int i = 0; i < N ; i++)
     {
         if (A[i] != i + 1)
         {
@@ -15,9 +16,14 @@ int missingNumberM1(int A[], int N)  //Used Sorting
     }
 }
 
-int missingNumberM2(int A[], int N) {
-    
+int missingNumberM2(int A[], int N){    // Time Complexity = O(N)
+    long sum=0;
+    for(int i=0; i<N-1; i++){
+        sum= sum + A[i];
+    }
+    return ((N*(N+1)/2 ) - sum );
 }
+
 
 int main()
 {
@@ -28,6 +34,9 @@ int main()
     for (i = 0; i < n - 1; i++)
         cin >> a[i];
 
-    cout << missingNumber1(a, n) << endl;
-    return 0;
+    cout << missingNumberM1(a, n) << endl;
+
+
 }
+// } Driver Code Ends
+
