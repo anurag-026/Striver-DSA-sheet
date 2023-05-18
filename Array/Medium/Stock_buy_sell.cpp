@@ -31,13 +31,13 @@ void stockBuySell(int price[], int n)
 int main()
 {
 
-	int n, i;
-	cin >> n;
-	int price[n];
-	for (i = 0; i < n; i++)
+	int size, i;
+	cin >> size;
+	int price[size];
+	for (i = 0; i < size; i++)
 		cin >> price[i];
 
-	stockBuySell(price, n);
+	stockBuySell(price, size);
 
 	return 0;
 }
