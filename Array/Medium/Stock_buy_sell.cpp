@@ -25,7 +25,40 @@ int maxProfit(int price[], int start, int end)
 
 void stockBuySell(int price[], int n)
 {
-	maxProfit(price[], 0, n - 1);
+	maxProfit(price, 0, n - 1);
+}
+
+void stockBuySell_M2(int price[], int n)
+{
+
+	int buy = price[0], sell, diff, maxD = INT_MIN, start = 0, ansE;
+	for (int i = 1; i < n; i++)
+	{
+		diff = price[i] - buy;
+
+		if (diff < 0)
+		{
+			buy = price[i];
+			start = i;
+		}
+
+		if (price[i] > price[i + 1] || i == n - 1)
+		{
+			ansE = i;
+			cout << "(" << start << " " << ansE << ") ";
+			// start = i + 1;
+			buy = price[i];
+			maxD = INT_MIN;
+		}
+
+		if (diff > maxD)
+		{
+			maxD = diff;
+			ansE = i;
+		}
+	}
+	cout << endl;
+	return;
 }
 
 int main()
@@ -37,7 +70,7 @@ int main()
 	for (i = 0; i < size; i++)
 		cin >> price[i];
 
-	stockBuySell(price, size);
+	stockBuySell_M2(price, size);
 
 	return 0;
 }
