@@ -61,6 +61,20 @@ void stockBuySell_M2(int price[], int n)
 	return;
 }
 
+void stockBuySell_M3(int price[], int n)
+{
+	int mini= a[0], cost, profit =0;
+    
+    for(int i=1; i<n; i++){
+        cost = a[i] - mini;
+        profit = max(profit , cost);
+        mini = min(mini, a[i]);
+                
+    }   
+	return;  
+
+}
+
 int main()
 {
 
