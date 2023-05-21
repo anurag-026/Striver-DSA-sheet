@@ -28,6 +28,8 @@ void stockBuySell(int price[], int n)
 	maxProfit(price, 0, n - 1);
 }
 
+//-------------------------------------------------
+
 void stockBuySell_M2(int price[], int n)
 {
 
