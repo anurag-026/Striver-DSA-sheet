@@ -7,7 +7,7 @@ bool cond(int i, int j, int k, int p_size, int n_size, int size)
     return ans;
 }
 
-vector<int> rearrangeArray(vector<int> &nums)
+vector<int> rearrangeArray(vector<int> &nums)           // Method 1
 {
     vector<int> p_num;
     vector<int> n_num;
@@ -41,6 +41,29 @@ vector<int> rearrangeArray(vector<int> &nums)
     }
     return nums;
 }
+
+vector<int> rearrangeArray_M2(vector<int>& nums) {              //Method 2
+
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        vector<int> ans_nums(nums.size());
+        int n = 1, p = 0;
+
+        for (auto num: nums )
+        {
+
+            if ( num>0 ){
+                ans_nums.at(p) = num;
+                p+=2;
+            }
+            if (num<0){
+                ans_nums.at(n) = num;
+                n+=2;
+            }
+        }
+        return ans_nums;
+
+    }
 
 int main()
 {
