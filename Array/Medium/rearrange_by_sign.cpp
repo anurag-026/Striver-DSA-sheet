@@ -44,8 +44,6 @@ vector<int> rearrangeArray(vector<int> &nums)           // Method 1
 
 vector<int> rearrangeArray_M2(vector<int>& nums) {              //Method 2
 
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
         vector<int> ans_nums(nums.size());
         int n = 1, p = 0;
 
