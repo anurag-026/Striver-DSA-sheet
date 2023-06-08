@@ -6,11 +6,11 @@ using namespace std;
 
 int main()
 {
-    int n = 24;
+    int n = 20;
 
     int arr[n];
 
-    arr[0] = 8111;
+    arr[0] = 4561;
 
     for (int i = 1; i < n; i++)
     {
