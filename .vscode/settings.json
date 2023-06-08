@@ -1,11 +1,14 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
+        "*.html": "html",
         "iostream": "cpp",
         "initializer_list": "cpp",
         "vector": "cpp",
         "xstring": "cpp",
         "xutility": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "ios": "cpp",
+        "xiosbase": "cpp"
     }
 }
