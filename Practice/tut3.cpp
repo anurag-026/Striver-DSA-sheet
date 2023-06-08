@@ -52,7 +52,7 @@ int main()
 {
 
     int n =20;
-    int a_0 = 1231;
+    int a_0 = 3895;
     //cout<<"No. of digits  \n";
     //cin>>n;
     //cout<<"First digit \n";
