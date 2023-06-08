@@ -46,13 +46,14 @@ void tutorial_3(int a_0 , int n)
     float ans = add_sq / n;
     // Step 6
     cout << "Step 6 : square root( " << add_sq << " / " << n << " ) = " << sqrt(ans) << "\n\n";
+    //cout << "Step 6 : ( " << add_sq << " / " << n << " ) = " << ans << "\n\n";
 }
 
 int main()
 {
 
     int n =20;
-    int a_0 = 3895;
+    int a_0 = 2973;
     //cout<<"No. of digits  \n";
     //cin>>n;
     //cout<<"First digit \n";

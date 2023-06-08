@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     int n = 20;
-    int arr[n] ={3,21,98, 203,17,9};
-    /*
+    int arr[n] ;//={3,21,98, 203,17,9};
+    
     arr[0] = 2973;
 
     for (int i = 1; i < n; i++)
@@ -15,7 +15,7 @@ int main()
         else
             arr[i] = arr[i - 1] + 2;
     }
-    */
+    
 
     cout << "\nDataset: \n";
     for (auto i : arr)
@@ -51,7 +51,8 @@ int main()
     double ans = sub/(n-1);
     cout<<"Step 7: "<<sub<<" / "<<n-1<<" = "  <<ans<<"\n\n";
 
-    cout<<"Step 8: Square root of ( "<<ans<<" ) = "   <<sqrt(ans)<<"\n\n";
+    //cout<<"Step 8: Square root of ( "<<ans<<" ) = "   <<sqrt(ans)<<"\n\n";
+    
 
     
 
