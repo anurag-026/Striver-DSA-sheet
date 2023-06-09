@@ -6,10 +6,13 @@ int main()
     int n = 20;
     int arr[n] ;//={3,21,98, 203,17,9};
     
-    arr[0] = 2973;
+    arr[0] = 2948;
 
     for (int i = 1; i < n; i++)
     {
+        //if((i>6 && i<10 )|| (i>15 && i<19)){
+        //  arr[i] = arr[i-1];
+        //} 
         if ((arr[i - 1] + 1) % 10 != 0)
             arr[i] = arr[i - 1] + 1;
         else

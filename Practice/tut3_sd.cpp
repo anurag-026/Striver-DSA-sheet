@@ -10,6 +10,10 @@ void tutorial_3(int a_0 , int n)
 
     for (int i = 1; i < n; i++)
     {
+        //if((i>6 && i<10 )|| (i>15 && i<19)){
+         // arr[i] = arr[i-1];
+          //continue;
+        //}
         if ((arr[i - 1] + 1) % 10 != 0)
             arr[i] = arr[i - 1] + 1;
         else
@@ -53,7 +57,7 @@ int main()
 {
 
     int n =20;
-    int a_0 = 2973;
+    int a_0 = 1111;
     //cout<<"No. of digits  \n";
     //cin>>n;
     //cout<<"First digit \n";
