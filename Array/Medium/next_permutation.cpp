@@ -30,10 +30,12 @@ vector<int> nextGreaterPermutation(vector<int> &A) {
 }
 
 
+
 int main()
 {
     vector<int> A = {2, 1, 5, 4, 3, 0, 0};
     vector<int> ans = nextGreaterPermutation(A);
+    
 
 
     cout << "The next permutation is: [";
