@@ -10,10 +10,10 @@ void tutorial_3(int a_0 , int n)
 
     for (int i = 1; i < n; i++)
     {
-        //if((i>6 && i<10 )|| (i>15 && i<19)){
-         // arr[i] = arr[i-1];
-          //continue;
-        //}
+        if((i>6 && i<10 )|| (i>15 && i<19)){
+         arr[i] = arr[i-1];
+          continue;
+        }
         if ((arr[i - 1] + 1) % 10 != 0)
             arr[i] = arr[i - 1] + 1;
         else
