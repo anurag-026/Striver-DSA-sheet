@@ -29,12 +29,21 @@ vector<int> nextGreaterPermutation(vector<int> &A) {
     return A;
 }
 
+vector<int> nextPermutation(vector<int> &A) {
+
+  
+    next_permutation(A.begin() , A.end());
+
+
+    return A;
+}
+
 
 
 int main()
 {
-    vector<int> A = {2, 1, 5, 4, 3, 0, 0};
-    vector<int> ans = nextGreaterPermutation(A);
+    vector<int> A = {2,3,1};
+    vector<int> ans = nextPermutation(A);
     
 
 
