@@ -66,7 +66,6 @@ vector<int> printLeaders(int arr[], int n) {
       max = arr[i];
     }
 
-  
   return ans;
 }
 
