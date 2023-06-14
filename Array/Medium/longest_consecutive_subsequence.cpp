@@ -1,12 +1,7 @@
-//{ Driver Code Starts
-// C++ program to remove recurring digits from
-// a given number
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-
-// a[n] = {1,2,3,4,2,3,4,6,6};
 int LongestConsecutiveSubs(int a[], int n){
 
     map<int , int > mpp;
@@ -38,5 +33,3 @@ int main()
 
     cout<<"\n"<<l << endl;
 }
-
-// } Driver Code Ends
