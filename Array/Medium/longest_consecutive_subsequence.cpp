@@ -2,34 +2,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int LongestConsecutiveSubs(int a[], int n){
-
-    map<int , int > mpp;
-    for(int i=0; i<n; i++){
-            mpp[a[i]] = i;
+ int longestConsecutive(vector<int>& nums) {
+        
+         
+      int n = nums.size();
+      sort(nums.begin() , nums.end());
+      if(n==0) return 0;
+      if(n==1)  return 1;
+      int l=1;
+      int maxi=1;
+      for(int i=0; i<n ; i++)
+      {
+          if(nums[i] == nums[i+1] -1) l++;
+          else if(nums[i] == nums[i+1])   continue;
+          else {
+              l=1;
+          }
+          maxi = max(l,maxi);
+      }
+      return maxi;
     }
-    
-    for(int i=0; i<n ; i++){
-        if(mpp[i] == (mpp[i] +1)){
-
-        }
-    }
-
-    return 0;
-}
 
 
 int main()
 {
-    int n = 9;
-
-    int a[n] = {1,2,3,4,2,3,4,6,6};
-
    
 
-    int l =LongestConsecutiveSubs(a, n);
-
-    
+    vector<int> a = {};
+    int l =longestConsecutive(a);
 
     cout<<"\n"<<l << endl;
 }
