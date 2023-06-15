@@ -23,11 +23,29 @@ using namespace std;
       return maxi;
     }
 
+int longestConsecutive(int arr[] , int n) {
+    if(n==1)  return 1;
+      if(n==0)  return 0;
+      
+      sort(arr, arr+n);
+      
+      int l = 1;
+      int maxi=1;
+      for(int i=0; i<n-1 ; i++)
+      {
+          
+          if(arr[i] == arr[i+1] -1) l++;
+          else if(arr[i] == arr[i+1])   continue;
+          else l=1;
+          
+          maxi = max(l,maxi);
+      }
+      return maxi;
 
+}
 int main()
 {
    
-
     vector<int> a = {};
     int l =longestConsecutive(a);
 
