@@ -41,30 +41,25 @@ int main(){
 //T.C. = O(n)
 int main()
 {
-    int n = 24;
+    int n = 18;
     bool arr[n + 1] ={0} ;
     int i=1;
 
-    for(i=1; i<n+1; i++){
-        arr[i]=1;
-    }
 
-    int count=0;
-    for(int i=2; i<n+1; i++){
-        count =0;
-        for(int j=2;j<=i;j++ ){
-            if(i%j==0)  count++;
+    for(int i=1; i<n+1;i++){
+
+        if(i*i <n+1){ 
+            arr[i*i] =1;
         }
-        arr[i]=count%2==0? 1:0;
     }
 
 
     int count_1=0;
-    for (bool i : arr){
-        cout<<i<<" ";
-       if(i) count_1++;
+    for (int i=0;i<n+1;i++){
+       // cout<<i<<": "<<arr[i]<<"  ";
+       if(arr[i]) count_1++;
     }
-    cout<<"\n"<<count_1;
+    cout<<count_1;
 
     return 0;
 }
