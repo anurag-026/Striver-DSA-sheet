@@ -43,7 +43,6 @@ int main()
 {
     int n = 18;
     bool arr[n + 1] ={0} ;
-    int i=1;
 
 
     for(int i=1; i<n+1;i++){

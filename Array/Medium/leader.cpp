@@ -1,15 +1,10 @@
-//{ Driver Code Starts
-// C++ program to remove recurring digits from
-// a given number
 #include <bits/stdc++.h>
 using namespace std;
-
-// } Driver Code Ends
 
 // a= {16 , 17 ,4,3,5,2}
 vector<int> leaders(int a[], int n)
 {
-    // Code here
+    
     vector<int> ans;
     int i = n - 2, j = 0;
     int max = a[n - 1];
@@ -34,7 +29,7 @@ int main()
 {
     int n = 6;
 
-    int a[n] = {16, 17, 4, 3, 5, 2};
+    int a[n] = {17,25,15,7,8,1};
 
    
 
