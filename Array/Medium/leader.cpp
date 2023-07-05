@@ -26,9 +26,9 @@ vector<int> leaders(int a[], int n)
 
 int main()
 {
-    int n = 6;
+    int n = 7;
 
-    int a[n] = {17,25,15,7,8,1};
+    int a[n] = {17,25,15,7,8,1,5};
 
    
 
