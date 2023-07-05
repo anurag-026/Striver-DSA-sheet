@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// a= {16 , 17 ,4,3,5,2}
 vector<int> leaders(int a[], int n)
 {
     
