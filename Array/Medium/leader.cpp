@@ -18,9 +18,6 @@ vector<int> leaders(int a[], int n)
         }
     }
     reverse(ans.begin() , ans.end());
-    
-
-
     return ans;
 }
 
@@ -30,12 +27,9 @@ int main()
 
     int a[n] = {17,25,15,7,8,1,5};
 
-   
-
     vector<int> v = leaders(a, n);
 
-    for (auto it = v.begin(); it != v.end(); it++)
-    {
+    for (auto it = v.begin(); it != v.end(); it++) {
         cout << *it << " ";
     }
 
