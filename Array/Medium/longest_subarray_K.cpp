@@ -49,8 +49,8 @@ int main()
     int n, k;
     cin >> n >> k;
     int a[n];
-    //n=10
-
+    //n=10,20,30,40
+    // a= {}
     for (int i = 0; i < n; i++)
         cin >> a[i];
 
