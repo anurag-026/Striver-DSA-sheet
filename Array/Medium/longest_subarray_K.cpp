@@ -44,6 +44,7 @@ int lenOfLongSubarr_M2(int A[], int n, int K)   // T.C.(worst Case)=  O(2n)
     return maxlen;
 }
 
+
 int main()
 {
     int n, k;
@@ -58,3 +59,22 @@ int main()
 
     return 0;
 }
+
+/*
+    
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    int a[n];
+    //n=10,20,30,40
+    // a= {}
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+
+    cout << lenOfLongSubarr_M2(a, n, k) << endl;
+
+    return 0;
+}
+
+*/
