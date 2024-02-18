@@ -9,6 +9,7 @@
         "xutility": "cpp",
         "type_traits": "cpp",
         "ios": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "cmath": "cpp"
     }
 }
