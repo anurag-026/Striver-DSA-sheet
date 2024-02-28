@@ -7,7 +7,7 @@ int dayCount(vector<int> &weights, int mid)
     long long count = 0;
     for (int i = 0; i < weights.size(); i++){
         count += weights[i];
-        if (count <= mid)
+        if (count < mid )
             continue;
         else{
             days += (double)count / (double)mid;
@@ -16,7 +16,7 @@ int dayCount(vector<int> &weights, int mid)
         }
         
     }
-    days += (double)count / (double)mid;
+    days += ceil((double)count / (double)mid);
     return days;
 }
 int shipWithinDays(vector<int> &weights, int days)
@@ -39,14 +39,17 @@ int shipWithinDays(vector<int> &weights, int days)
         else {
             high = mid - 1;
         }
+
+        mid = (high+low)/2;
     }
     return mid;
 }
 
 int main(){
 
-    vector<int> weights = {1,2,3,4,5,6,7,8,9,10};
+    vector<int> weights = {10,50,100,100,50,100,100,100};
     
      int days=5;
+
      cout<<shipWithinDays(weights , days);
 }

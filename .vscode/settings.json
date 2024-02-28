@@ -12,6 +12,7 @@
         "xiosbase": "cpp",
         "cmath": "cpp",
         "utility": "cpp",
-        "xlocale": "cpp"
+        "xlocale": "cpp",
+        "xtree": "cpp"
     }
 }
